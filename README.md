@@ -1,2 +1,2 @@
-# frontend-estatico-1122-Danilo-Santos
+# Atividades do módulo de Front-end estático, turma 1122.
  
