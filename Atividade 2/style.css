@@ -16,10 +16,12 @@ label {
 input,
 select,
 textarea {
-    width: 100%;
+    width: calc(100% - 16px);
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }
 
 button {
@@ -34,8 +36,6 @@ button {
 ul,
 ol {
     margin-top: 10px;
-}
-
-h1{
-    text-align: center;
+    list-style: none;
+    padding: 0;
 }
