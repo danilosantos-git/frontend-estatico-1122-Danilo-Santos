@@ -5,46 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Danilo Santos Araújo</title>
 </head>
 
 <body>
-    <form action="#" method="post">
+    <form id="meuFormulario" action="#" method="post">
+        <h1>Formulário</h1>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
         <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" min="18" required>
+        <input type="number" id="idade" name="idade" min="18" placeholder="Informe sua idade" required>
 
-        <label for="genero">Gênero:</label>
-        <select id="genero" name="genero">
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
+        <label for="escolaridade">Escolaridade:</label>
+        <select id="escolaridade" name="escolaridade">
+            <option value="medio">Médio completo</option>
+            <option value="sup_incompleto">Superior incompleto</option>
+            <option value="sup_completo">Superior completo</option>
+            <option value="pos_graduacao">Pós-graduação</option>
         </select>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Insira seu melhor e-mail" required>
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade">
-
-        <h3>Preferências:</h3>
-        <ul>
-            <li><input type="checkbox" name="preferencias" value="esporte"> Esporte</li>
-            <li><input type="checkbox" name="preferencias" value="musica"> Música</li>
-            <li><input type="checkbox" name="preferencias" value="leitura"> Leitura</li>
-        </ul>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Informe seu endereço" required>
 
         <h3>Escolha um tema favorito:</h3>
         <ol>
-            <li><label><input type="radio" name="tema" value="tecnologia"> Tecnologia</label></li>
-            <li><label><input type="radio" name="tema" value="ciencia"> Ciência</label></li>
-            <li><label><input type="radio" name="tema" value="arte"> Arte</label></li>
+            <li><label><input type="radio" name="tema" value="tecnologia" required>Tecnologia</label></li>
+            <li><label><input type="radio" name="tema" value="ciencia" required>Ciência</label></li>
+            <li><label><input type="radio" name="tema" value="arte" required>Arte</label></li>
         </ol>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        <h3>Preferências:</h3>
+        <ul>
+            <li><input type="checkbox" name="preferencias" value="esporte">Esporte</li>
+            <li><input type="checkbox" name="preferencias" value="musica">Música</li>
+            <li><input type="checkbox" name="preferencias" value="leitura">Leitura</li>
+        </ul>
+
+        <label for="mensagem">Algo a mais para nos contar?:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui"></textarea>
 
         <button type="submit">Enviar</button>
         <button type="reset">Limpar</button>
