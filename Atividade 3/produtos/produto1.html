@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../script.js"></script>
+    <title>Compra - Bolo de Vó</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Compra - Bolo de Vó</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="produto">
+        <img src="../images/bolo-banana-canela.jpg" alt="Produto 1">
+        <div class="descricao">
+            <h2>Banana com Canela</h2>
+            <p>Uma clássica receita da Bolo de Vó, trazendo o irresistível sabor da banana em uma massa macia,
+                complementada por um delicado toque de canela. O peso médio do bolo é de 760 gramas, e a porção rende
+                aproximadamente 12 fatias de 60 gramas cada.</p>
+            <p>Preço unitário: R$ 21,00</p>
+            <div class="quantidade">
+                <button onclick="alterarQuantidade(1, -1, 21)">-</button>
+                <span id="quantidade-produto1">0</span>
+                <button onclick="alterarQuantidade(1, 1, 21)">+</button>
+            </div>
+            <p>Valor total: <span id="valor-total-produto1">R$ 0,00</span></p>
+            <button onclick="finalizarCompra(1)">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bolo de Vó</p>
+    </footer>
+
+</body>
+
+</html>

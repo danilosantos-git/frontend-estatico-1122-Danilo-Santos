@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../script.js"></script>
+    <title>Compra - Bolo de Vó</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Compra - Bolo de Vó</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="produto">
+        <img src="../images/bolo-laranja.jpg" alt="Produto 2">
+        <div class="descricao">
+            <h2>Bolo de Laranja</h2>
+            <p>Preparado com a própria fruta, este bolo é leve e ideal para ser degustado com um café. Tudo natural,
+                conforme o esperado! O peso médio do bolo é de 950 gramas, proporcionando cerca de 15 fatias de 60
+                gramas cada.</p>
+            <p>Preço unitário: R$ 22,00</p>
+            <div class="quantidade">
+                <button onclick="alterarQuantidade(1, -1, 22)">-</button>
+                <span id="quantidade-produto1">0</span>
+                <button onclick="alterarQuantidade(1, 1, 22)">+</button>
+            </div>
+            <p>Valor total: <span id="valor-total-produto1">R$ 0,00</span></p>
+            <button onclick="finalizarCompra(1)">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bolo de Vó</p>
+    </footer>
+
+</body>
+
+</html>
